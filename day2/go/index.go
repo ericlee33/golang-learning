@@ -11,19 +11,23 @@ func main() {
 
 	// 开启一个并发匿名函数
 	go func() {
+		// 通过通道通知main的goroutine
 
 		fmt.Println("start goroutine")
 
-		// 通过通道通知main的goroutine
-		ch <- 0
+		for i := 0; i < 10000; i++ {
+			fmt.Println("exit %d goroutine", i)
 
-		fmt.Println("exit goroutine")
+		}
+		ch <- 0
 
 	}()
 
 	fmt.Println("wait goroutine")
 
 	// 等待匿名goroutine
+	// for i := 0; i < 2; i++ {
+	// }
 	<-ch
 
 	fmt.Println("all done")
