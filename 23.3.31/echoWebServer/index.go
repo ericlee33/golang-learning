@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/ericlee33/golang-learning/23.3.31/sub"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"go-learning/23.3.31/sub"
 	"net/http"
 )
 

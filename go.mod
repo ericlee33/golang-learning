@@ -1,4 +1,4 @@
-module go-learning
+module github.com/ericlee33/golang-learning
 
 go 1.19
 

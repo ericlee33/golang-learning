@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-learning/23.3.31/subMod"
+	"github.com/ericlee33/golang-learning/23.3.31/subMod"
 )
 
 func main() {
